@@ -5,10 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "mocha test -u bdd -R spec",
-    "start": "echo \"Running start script\"",
-    "start:dev": "echo \"Running start:dev script\"",
-    "stop": "echo \"Running stop script\"",
-    "restart": "echo \"Running restart script. This is a custom script, so stop and start scripts won't automatically be run.\""
+    "start": "echo \"Running start script\""
   },
   "repository": {
     "type": "git",
@@ -27,5 +24,8 @@
   "devDependencies": {
     "mocha": "^2.4.5",
     "should": "^8.4.0"
+  },
+  "dependencies": {
+    "koa": "^1.0.0"
   }
 }
