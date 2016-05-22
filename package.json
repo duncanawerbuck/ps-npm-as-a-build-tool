@@ -23,7 +23,8 @@
   "homepage": "https://github.com/githubUser919/ps-npm-as-a-build-tool#readme",
   "devDependencies": {
     "mocha": "^2.4.5",
-    "should": "^8.4.0"
+    "should": "^8.4.0",
+    "supertest": "^1.1.0"
   },
   "dependencies": {
     "koa": "^1.0.0"
