@@ -4,7 +4,11 @@
   "description": "A small demo site for our npm scripting adventures",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "echo \"Running start script\"",
+    "start:dev": "echo \"Running start:dev script\"",
+    "stop": "echo \"Running stop script\"",
+    "restart": "echo \"Running restart script. This is a custom script, so stop and start scripts won't automatically be run.\""
   },
   "repository": {
     "type": "git",
