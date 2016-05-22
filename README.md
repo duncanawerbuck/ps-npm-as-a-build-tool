@@ -11,7 +11,8 @@ Me following along with the [Introduction to npm as a Build Tool](https://app.pl
 * Install ```koa``` v1.0.0 (lightweight web framework that uses generators to negate the need for nested callbacks)
 * Create index.js (koa server) and ```start``` script, so web app runs on a configurable port (preferred port can be passed as parameter to ```start``` script)
 * Create ```start:dev``` task that runs web app on port 4000 (3000 is the default if you use the ```start``` script)
- 
+* Install ```supertest``` v1.1.0 (dev dependency) and create a real test that verifies our web app returns the friendly message
+* Add ```test``` script to invoke mocha to run our web app test
 
 ### 2. Pre- & post hooks
 ### 3. Develop and test scripts

@@ -1,4 +1,4 @@
-var app = require('koa')();
+var app = module.exports = require('koa')();
 
 app.use(function *(){
     this.body = 'Koa says Hi!';
@@ -6,5 +6,8 @@ app.use(function *(){
 
 var port = process.env.PORT || (process.argv[2] || 3000);
 
-app.listen(port);
+if(!module.parent) {
+    app.listen(port);
+}
+
 console.log('Application started. Listening on port ' + port);
