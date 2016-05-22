@@ -6,7 +6,9 @@
   "scripts": {
     "start": "node index.js",
     "start:dev": "node index.js 4000",
-    "test": "mocha test -u bdd -R spec"
+    "test": "mocha test -u bdd -R spec",
+    "pretest": "npm run lint",
+    "lint": "eslint **/*.js"
   },
   "repository": {
     "type": "git",
@@ -23,6 +25,8 @@
   },
   "homepage": "https://github.com/githubUser919/ps-npm-as-a-build-tool#readme",
   "devDependencies": {
+    "eslint": "^2.10.2",
+    "jshint": "^2.9.2",
     "mocha": "^2.4.5",
     "should": "^8.4.0",
     "supertest": "^1.1.0"

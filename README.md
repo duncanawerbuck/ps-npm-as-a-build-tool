@@ -4,7 +4,7 @@ Me following along with the [Introduction to npm as a Build Tool](https://app.pl
 
 ## Modules
 
-(we're ignoring the intro module below)
+(we're ignoring the intro module)
 ### 1. Get started
 * Introduction to defining scripts, starting with ones that simply echo text
 * Install ```mocha``` (testing framework) and ```should``` (a popular assertion library)
@@ -15,6 +15,12 @@ Me following along with the [Introduction to npm as a Build Tool](https://app.pl
 * Add ```test``` script to invoke mocha to run our web app test
 
 ### 2. Pre- & post hooks
+We implement a linting task for our project in this module. The course uses jshint, but there are issues on Windows, so I used eslint:
+* Install ```eslint``` (dev dependency)
+* Run ```eslint --init``` and configure eslint as required (you're on your own here, so Google is your friend...)
+* Create new ```lint``` task that invokes eslint
+* Run this as a pretest hook
+
 ### 3. Develop and test scripts
 ### 4. Scripts for watching
 ### 5. Build & reply scripts

@@ -1,3 +1,5 @@
+/*eslint no-console:0*/
+
 var app = module.exports = require('koa')();
 
 app.use(function *(){
