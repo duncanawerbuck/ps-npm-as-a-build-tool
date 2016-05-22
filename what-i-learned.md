@@ -8,3 +8,7 @@ I knew `npm run <scriptname>`, but never knew that:
     * ```npm test```
     * ```npm tst```
     * ```npm t```
+* ```npm start``` is short for ```npm run start```
+
+## Conventions
+It's normal to have ```start```, ```stop``` and ```test``` scripts. Running ```restart``` will automatically run ```stop```, then ```start```, unless you define your own ```restart``` script, which will only do exactly what you specify.
