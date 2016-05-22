@@ -4,8 +4,7 @@
   "description": "A small demo site for our npm scripting adventures",
   "main": "index.js",
   "scripts": {
-    "test": "mocha test -u bdd -R spec",
-    "start": "echo \"Running start script\""
+    "start": "node index.js"
   },
   "repository": {
     "type": "git",
