@@ -4,7 +4,7 @@
   "description": "A small demo site for our npm scripting adventures",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "mocha test -u bdd -R spec",
     "start": "echo \"Running start script\"",
     "start:dev": "echo \"Running start:dev script\"",
     "stop": "echo \"Running stop script\"",
@@ -23,5 +23,9 @@
   "bugs": {
     "url": "https://github.com/githubUser919/ps-npm-as-a-build-tool/issues"
   },
-  "homepage": "https://github.com/githubUser919/ps-npm-as-a-build-tool#readme"
+  "homepage": "https://github.com/githubUser919/ps-npm-as-a-build-tool#readme",
+  "devDependencies": {
+    "mocha": "^2.4.5",
+    "should": "^8.4.0"
+  }
 }

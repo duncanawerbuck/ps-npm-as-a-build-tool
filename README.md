@@ -6,6 +6,9 @@ Me following along with the [Introduction to npm as a Build Tool](https://app.pl
 
 (we're ignoring the intro module below)
 ### 1. Get started
+* Introduction to defining scripts, starting with ones that simply echo text.
+* Install ```mocha``` (testing framework) and ```should``` (a popular assertion library)
+
 ### 2. Pre- & post hooks
 ### 3. Develop and test scripts
 ### 4. Scripts for watching
