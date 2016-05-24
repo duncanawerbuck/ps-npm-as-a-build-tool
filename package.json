@@ -25,11 +25,21 @@
   },
   "homepage": "https://github.com/githubUser919/ps-npm-as-a-build-tool#readme",
   "devDependencies": {
+    "browserify": "^11.2.0",
+    "coffee-script": "^1.10.0",
     "eslint": "^2.10.2",
     "jshint": "^2.9.2",
-    "mocha": "^2.4.5",
-    "should": "^8.4.0",
-    "supertest": "^1.1.0"
+    "less": "^2.5.3",
+    "live-reload": "^1.1.0",
+    "mocha": "^2.3.3",
+    "nodemon": "^1.7.1",
+    "rimraf": "^2.4.3",
+    "should": "^7.1.0",
+    "supertest": "^1.1.0",
+    "typescript": "^1.6.2",
+    "uglifyjs": "^2.4.10",
+    "watch": "^0.16.0",
+    "watchify": "^3.4.0"
   },
   "dependencies": {
     "koa": "^1.0.0"
