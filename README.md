@@ -17,11 +17,14 @@ Me following along with the [Introduction to npm as a Build Tool](https://app.pl
 ### 2. Pre- & post hooks
 We implement a linting task for our project in this module. The course uses jshint, but there are issues on Windows, so I used eslint:
 * Install ```eslint``` (dev dependency)
-* Run ```eslint --init``` and configure eslint as required (you're on your own here, so Google is your friend...)
+* Run ```eslint --init``` and configure eslint as required:
+  * ignore node_modules by adding a ```.eslintignore``` file
+  * choose a consistent approach to using single or double quotes - defined in ```.eslintrc.json```
 * Create new ```lint``` task that invokes eslint
 * Run this as a pretest hook
 
 ### 3. Develop and test scripts
+* I skipped compiling CoffeeScript, and created a ```compile:ts``` task for TypeScript compilation. I had to also ensure eslint was ignoring the .js files that are the result of TypeScript compilation - see ```.eslintignore```.
 ### 4. Scripts for watching
 ### 5. Build & reply scripts
 ### 6. Put it all together "Deploy to prod"
