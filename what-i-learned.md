@@ -14,3 +14,19 @@ I knew `npm run <scriptname>`, but never knew that:
 
 ## Conventions
 It's normal to have ```start```, ```stop``` and ```test``` scripts. Running ```restart``` will automatically run ```stop```, then ```start```, unless you define your own ```restart``` script, which will only do exactly what you specify.
+
+## Running multiple commands
+Use ```&&``` to run commands in series:
+```
+echo 1 && echo 2
+```
+
+A failing command will result in no further commands executing:
+```
+exit 1 && echo "I will not run"
+```
+
+Use ```;``` to run subsequent commands irrespective of previous failures:
+```
+npm run someFailingTask ; echo "I run anyway"
+```
