@@ -1,7 +1,7 @@
 /* global describe it */
 
 var should = require('should'),
-    greeter = require('../src/typescript/tsCode.js');
+    greeter = require('../lib/tsCode.js');
 
 should = should || 'There\'s got to be a better way to silence eslint whinging that should is never used.';
 //should.equal(1); //TODO: Got to be a better way to silence eslint whinging that should is never used.
