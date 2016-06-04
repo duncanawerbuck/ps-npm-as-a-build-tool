@@ -7,9 +7,12 @@
     "start": "node index.js",
     "start:dev": "node index.js 4000",
     "test": "mocha test -u bdd -R spec",
-    "pretest": "npm run lint",
+    "pretest": "npm run compile && npm run lint",
     "lint": "eslint **/*.js",
-    "compile:ts": "tsc --outDir ./lib --module commonjs ./src/typescript/tsCode.ts"
+    "compile": "npm run compile:ts",
+    "compile:ts": "tsc --outDir ./lib --module commonjs ./src/typescript/tsCode.ts",
+    "precompile": "npm run clean",
+    "clean": "rimraf lib/*"
   },
   "repository": {
     "type": "git",
