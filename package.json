@@ -9,7 +9,7 @@
     "test": "mocha test -u bdd -R spec",
     "pretest": "npm run lint",
     "lint": "eslint **/*.js",
-    "compile:ts": "tsc --module commonjs ./src/typescript/tsCode.ts"
+    "compile:ts": "tsc --outDir ./lib --module commonjs ./src/typescript/tsCode.ts"
   },
   "repository": {
     "type": "git",
