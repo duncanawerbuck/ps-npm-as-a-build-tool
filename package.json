@@ -12,7 +12,8 @@
     "compile": "npm run compile:ts",
     "compile:ts": "tsc --outDir ./lib --module commonjs ./src/typescript/tsCode.ts",
     "precompile": "npm run clean",
-    "clean": "rimraf lib/*"
+    "clean": "rimraf lib/*",
+    "build:less": "lessc src/less/demo.less public/css/site.css"
   },
   "repository": {
     "type": "git",

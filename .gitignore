@@ -38,3 +38,6 @@ jspm_packages
 
 # Compiled TypeScript
 lib
+
+# CSS files generated from LESS files
+public/css
