@@ -28,6 +28,6 @@ We implement a linting task for our project in this module. The course uses jshi
 * Install ```less``` (dev dependency) and create new ```build:less``` task to compile demo.less to public/css/site.css
 
 ### 4. Scripts for watching
-### 5. Build & reply scripts
+### 5. Build & deploy scripts
 ### 6. Put it all together "Deploy to prod"
 
