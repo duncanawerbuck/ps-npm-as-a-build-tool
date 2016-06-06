@@ -16,6 +16,7 @@
     "build:less": "lessc src/less/demo.less public/css/site.css",
     "build:bundle": "browserify src/browserify/main.js | uglifyjs -mc > lib/bundle.min.js",
     "build:clean": "rimraf lib/* && rimraf public/css/*",
+    "prebuild": "npm run build:clean",
     "build": "npm run build:less && npm run build:bundle"
   },
   "repository": {
