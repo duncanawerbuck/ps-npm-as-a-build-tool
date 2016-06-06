@@ -28,6 +28,7 @@ We implement a linting task for our project in this module. The course uses jshi
 * Install ```less``` (dev dependency) and create new ```build:less``` task to compile demo.less to public/css/site.css
 * Install ```browserify``` (dev dependency) and create ```build:bundle``` task to bundle using browserify and allow us to require commonJS modules and bundle to a single file 
 * Install ```uglify``` (dev dependency) and amend ```build:bundle``` task to pipe the browserified output to a mangled and compressed .js. Note that I had to remove the backticks (string template ES6 syntax) from ```main.js``` so uglify wouldn't fall over. The better solution would be to babel transpile to ES5 before uglifying. This is trivial to do, but I didn't want to deviate too much from the course by throwing babel transpilation into the mix. 
+* Create ```build``` task that just runs ```build:less```, then ```build:bundle```.
 
 ### 4. Scripts for watching
 ### 5. Build & deploy scripts
