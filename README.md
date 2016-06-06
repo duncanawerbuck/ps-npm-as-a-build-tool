@@ -26,6 +26,7 @@ We implement a linting task for our project in this module. The course uses jshi
 ### 3. Develop and test scripts
 * I skipped compiling CoffeeScript, and created a ```compile:ts``` task for TypeScript compilation. I had to also ensure eslint was ignoring the .js files that are the result of TypeScript compilation - see ```.eslintignore```.
 * Install ```less``` (dev dependency) and create new ```build:less``` task to compile demo.less to public/css/site.css
+* Create ```build:bundle``` task to bundle using browserify and allow us to require commonJS modules and bundle to a single file 
 
 ### 4. Scripts for watching
 ### 5. Build & deploy scripts

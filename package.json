@@ -13,7 +13,8 @@
     "compile:ts": "tsc --outDir ./lib --module commonjs ./src/typescript/tsCode.ts",
     "precompile": "npm run clean",
     "clean": "rimraf lib/*",
-    "build:less": "lessc src/less/demo.less public/css/site.css"
+    "build:less": "lessc src/less/demo.less public/css/site.css",
+    "build:bundle": "browserify src/browserify/main.js -o lib/bundle.js"
   },
   "repository": {
     "type": "git",
