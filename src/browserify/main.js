@@ -1,3 +1,5 @@
+/* eslint no-console: "off" */
+
 const theFoo = require('./foo');
 
 const helloMessage = theFoo.getHelloMessageFromFoo();
