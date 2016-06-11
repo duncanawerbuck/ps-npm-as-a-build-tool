@@ -1,6 +1,7 @@
 # What I Learned
 
 * You can easily find out what commands you can run (e.g. ```mocha```) by listing the contents of the hidden ```.bin``` folder in the ```node_modules``` folder.
+* You can see which scripts are available to run by just typing ```npm run```
 
 ## Shortcuts
 I knew `npm run <scriptname>`, but never knew that:
