@@ -1,3 +1,3 @@
 module.exports.getHelloMessageFromFoo = function () {
-  return 'foo says hello';
+    return 'foo says hello';
 };
