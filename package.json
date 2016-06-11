@@ -7,7 +7,6 @@
     "start": "node index.js",
     "start:dev": "node index.js 4000",
     "test": "mocha test -u bdd -R spec",
-    "pretest": "npm run build && npm run lint",
     "lint": "eslint **/*.js",
     "compile:ts": "tsc --outDir ./lib --module commonjs ./src/typescript/tsCode.ts",
     "clean": "npm run clean:bundles && npm run clean:css && npm run clean:ts",
@@ -16,7 +15,7 @@
     "clean:css": "rimraf public/css/*",
     "build:less": "lessc src/less/demo.less public/css/site.css",
     "build:bundle": "browserify src/browserify/main.js | uglifyjs -mc > lib/bundle.min.js",
-    "prebuild": "npm run clean",
+    "prebuild": "npm run lint && npm run clean",
     "build": "npm run build:less && npm run compile:ts && npm run build:bundle"
   },
   "repository": {
