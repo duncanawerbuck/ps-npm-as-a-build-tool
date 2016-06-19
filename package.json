@@ -17,7 +17,7 @@
     "build:bundle": "browserify src/browserify/main.js | uglifyjs -mc > lib/bundle.min.js",
     "prebuild": "npm run lint && npm run clean",
     "build": "npm run build:less && npm run compile:ts && npm run build:bundle",
-    "watch:test": "mocha test -u bdd -R min -w"
+    "watch:test": "npm run test -- -w -R min"
   },
   "repository": {
     "type": "git",
