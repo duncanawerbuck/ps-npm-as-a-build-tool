@@ -16,7 +16,8 @@
     "build:less": "lessc src/less/demo.less public/css/site.css",
     "build:bundle": "browserify src/browserify/main.js | uglifyjs -mc > lib/bundle.min.js",
     "prebuild": "npm run lint && npm run clean",
-    "build": "npm run build:less && npm run compile:ts && npm run build:bundle"
+    "build": "npm run build:less && npm run compile:ts && npm run build:bundle",
+    "watch:test": "mocha test -u bdd -R min -w"
   },
   "repository": {
     "type": "git",

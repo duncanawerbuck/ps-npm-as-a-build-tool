@@ -33,6 +33,7 @@ We implement a linting task for our project in this module. The course uses jshi
 * Invoke ```build:clean``` as ```prebuild``` hook.
 
 ### 4. Scripts for watching
+* Add ```watch:test``` script, which is very similar to the ```test``` script, but uses the ```-w``` (or alternatively ```--watch```) flag to re-run tests when mocha detects code changes.
 ### 5. Build & deploy scripts
 ### 6. Put it all together "Deploy to prod"
 
