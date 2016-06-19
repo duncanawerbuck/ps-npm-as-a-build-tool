@@ -37,6 +37,7 @@ We implement a linting task for our project in this module. The course uses jshi
 * Refactor ```watch:test``` script to call through to the ```test``` script, overriding the paramaters passed to the mocha command.
 * I skipped the ```watch:lint``` task, since it falls over on Windows (as per discussion on Pluralsight) and I couldn't be bothered to figure it out.
 * Install ```nodemon``` (dev dependency) and create ```watch:server``` task to restart server via index.js when changes are detected.
+* Install ```watchify``` (dev dependency), which allows watching for Browserify and add a new ```watch:bundle``` script. Note that we're not minifying with this task (unnecessary at development time).
 
 ### 5. Build & deploy scripts
 ### 6. Put it all together "Deploy to prod"

@@ -18,7 +18,8 @@
     "prebuild": "npm run lint && npm run clean",
     "build": "npm run build:less && npm run compile:ts && npm run build:bundle",
     "watch:test": "npm run test -- -w -R min",
-    "watch:server": "nodemon --ignore src --ignore public index.js" 
+    "watch:server": "nodemon --ignore src --ignore public index.js",
+    "watch:bundle": "watchify src/browserify/main.js -o lib/bundle.min.js"
   },
   "repository": {
     "type": "git",
