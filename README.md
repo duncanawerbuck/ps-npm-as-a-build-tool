@@ -35,6 +35,8 @@ We implement a linting task for our project in this module. The course uses jshi
 ### 4. Scripts for watching
 * Add ```watch:test``` script, which is very similar to the ```test``` script, but uses the ```-w``` (or alternatively ```--watch```) flag to re-run tests when mocha detects code changes.
 * Refactor ```watch:test``` script to call through to the ```test``` script, overriding the paramaters passed to the mocha command.
+* I skipped the ```watch:lint``` task, since it falls over on Windows (as per discussion on Pluralsight) and I couldn't be bothered to figure it out.
+* Install ```nodemon``` (dev dependency) and create ```watch:server``` task to restart server via index.js when changes are detected.
 
 ### 5. Build & deploy scripts
 ### 6. Put it all together "Deploy to prod"

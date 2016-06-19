@@ -17,7 +17,8 @@
     "build:bundle": "browserify src/browserify/main.js | uglifyjs -mc > lib/bundle.min.js",
     "prebuild": "npm run lint && npm run clean",
     "build": "npm run build:less && npm run compile:ts && npm run build:bundle",
-    "watch:test": "npm run test -- -w -R min"
+    "watch:test": "npm run test -- -w -R min",
+    "watch:server": "nodemon --ignore src --ignore public index.js" 
   },
   "repository": {
     "type": "git",
